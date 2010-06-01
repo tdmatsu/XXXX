@@ -18,6 +18,8 @@
 #include "XXXX.hrh"
 // ]]] end generated region [Generated User Includes]
 
+#include <AknGlobalNote.h> 
+
 // [[[ begin generated region: do not modify [Generated Constants]
 // ]]] end generated region [Generated Constants]
 
@@ -326,5 +328,14 @@ void CXXXXContainer::HandleBtnHelloStateChangedL(
 		TCoeEvent /* anEvent */ )
 	{
 	// TODO: implement stateChanged event handler
+    CAknGlobalNote* iGlobalNote = CAknGlobalNote::NewL(); //Initialize the note
+
+    CleanupStack::PushL(iGlobalNote);
+    
+    _LIT(KInfoText, "Information");
+
+    iGlobalNote->ShowNoteL(EAknGlobalInformationNote, KInfoText);
+
+    CleanupStack::PopAndDestroy(); // globalNote
 	}
 				

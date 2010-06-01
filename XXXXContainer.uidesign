@@ -128,9 +128,9 @@
       <string id="STR_XXXXContainerView_2"/>
       <string id="STR_XXXXContainerView_3"/>
       <string id="STR_XXXXContainerView_4">XXXXContainer</string>
-      <string id="STR_XXXXContainerView_5">Hello</string>
+      <string id="STR_XXXXContainerView_5">Button 1</string>
       <string id="STR_XXXXContainerView_6">Button Hover Text</string>
-      <string id="STR_XXXXContainerView_8">Moi</string>
+      <string id="STR_XXXXContainerView_8">Button 2</string>
       <string id="STR_XXXXContainerView_9">Button Hover Text</string>
     </stringTable>
   </stringBundle>
@@ -139,8 +139,8 @@
     <resourceMappings>
       <resourceMapping instanceName="statusPane">r_xxxxcontainer_status_pane</resourceMapping>
       <resourceMapping instanceName="btnMoi">r_xxxxcontainer_btn_moi</resourceMapping>
-      <resourceMapping instanceName="XXXXContainerView">r_xxxxcontainer_xxxxcontainer_view</resourceMapping>
       <resourceMapping instanceName="title">r_xxxxcontainer_title_resource</resourceMapping>
+      <resourceMapping instanceName="XXXXContainerView">r_xxxxcontainer_xxxxcontainer_view</resourceMapping>
       <resourceMapping instanceName="btnHello">r_xxxxcontainer_btn_hello</resourceMapping>
       <resourceMapping instanceName="optionsMenu">r_xxxxcontainer_options_menu</resourceMapping>
     </resourceMappings>

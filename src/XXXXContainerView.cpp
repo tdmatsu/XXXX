@@ -26,6 +26,8 @@
 #include "XXXXContainer.h"
 // ]]] end generated region [Generated User Includes]
 
+#include <AknGlobalNote.h> 
+
 // [[[ begin generated region: do not modify [Generated Constants]
 // ]]] end generated region [Generated Constants]
 
@@ -257,6 +259,12 @@ CXXXXContainer* CXXXXContainerView::CreateContainerL()
 TBool CXXXXContainerView::HandleShow_HelloMenuItemSelectedL( TInt aCommand )
 	{
 	// TODO: implement selected event handler
-	return ETrue;
+    CAknGlobalNote* iGlobalNote = CAknGlobalNote::NewL(); //Initialize the note
+    CleanupStack::PushL(iGlobalNote);
+    _LIT(KInfoText, "Hello");
+    iGlobalNote->ShowNoteL(EAknGlobalInformationNote, KInfoText);
+    CleanupStack::PopAndDestroy(); // globalNote
+    
+    return ETrue;
 	}
 				

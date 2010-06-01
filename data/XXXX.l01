@@ -1,0 +1,14 @@
+/*
+========================================================================
+ Name        : XXXX.l01
+ Author      : 
+ Copyright   : Your copyright notice
+ Description : 
+========================================================================
+*/
+// localized strings for language: UK English (01)
+#define STR_XXXXApplication_1 ""
+#define STR_XXXXApplication_2 ""
+#define STR_XXXXApplication_3 ""
+#define STR_XXXXApplication_4 "XXXX"
+#define STR_XXXXApplication_5 "XXXX"

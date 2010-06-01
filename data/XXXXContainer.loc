@@ -1,0 +1,11 @@
+/*
+========================================================================
+ Name        : XXXXContainer.loc
+ Author      : 
+ Copyright   : Your copyright notice
+ Description : 
+========================================================================
+*/
+#ifdef LANGUAGE_01
+#include "XXXXContainer.l01"
+#endif

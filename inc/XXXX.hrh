@@ -1,0 +1,12 @@
+/*
+========================================================================
+ Name        : XXXX.hrh
+ Author      : 
+ Copyright   : Your copyright notice
+ Description : 
+========================================================================
+*/
+enum TXXXXViewUids
+	{
+	EXXXXContainerViewId = 1
+	};

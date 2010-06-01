@@ -1,0 +1,35 @@
+/*
+========================================================================
+ Name        : XXXXContainer.rssi
+ Author      : 
+ Copyright   : Your copyright notice
+ Description : 
+========================================================================
+*/
+#include "XXXXContainer.loc"
+
+RESOURCE AVKON_VIEW r_xxxxcontainer_xxxxcontainer_view
+	{
+	cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+	menubar = r_xxxxcontainer_options_menu;
+	toolbar = 0;
+	}
+RESOURCE MENU_BAR r_xxxxcontainer_options_menu
+	{
+	}
+RESOURCE STATUS_PANE_APP_MODEL r_xxxxcontainer_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_xxxxcontainer_title_resource;
+			}
+		};
+	}
+RESOURCE TITLE_PANE r_xxxxcontainer_title_resource
+	{
+	txt = STR_XXXXContainerView_4;
+	}

@@ -115,6 +115,9 @@ void CXXXXContainerView::HandleCommandL( TInt aCommand )
 	TBool commandHandled = EFalse;
 	switch ( aCommand )
 		{	// code to dispatch to the AknView's menu and CBA commands is generated here
+		case EXXXXContainerViewShow_HelloMenuItemCommand:
+			commandHandled = HandleShow_HelloMenuItemSelectedL( aCommand );
+			break;
 		default:
 			break;
 		}
@@ -246,3 +249,14 @@ CXXXXContainer* CXXXXContainerView::CreateContainerL()
 	return CXXXXContainer::NewL( ClientRect(), NULL, this );
 	}
 
+/** 
+ * Handle the selected event.
+ * @param aCommand the command id invoked
+ * @return ETrue if the command was handled, EFalse if not
+ */
+TBool CXXXXContainerView::HandleShow_HelloMenuItemSelectedL( TInt aCommand )
+	{
+	// TODO: implement selected event handler
+	return ETrue;
+	}
+				

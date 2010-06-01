@@ -119,18 +119,18 @@
     <component id="com.nokia.sdt.series60.MenuBar">
       <compoundProperty id="location">
         <property id="x">12</property>
-        <property id="y">489</property>
+        <property id="y">445</property>
       </compoundProperty>
       <property id="name">optionsMenu</property>
       <compoundProperty id="size">
-        <property id="height">95</property>
+        <property id="height">139</property>
         <property id="width">335</property>
       </compoundProperty>
       <component id="com.nokia.sdt.series60.MenuPane">
         <compoundProperty id="location"/>
         <property id="name">menuPane1</property>
         <compoundProperty id="size">
-          <property id="height">95</property>
+          <property id="height">139</property>
           <property id="width">335</property>
         </compoundProperty>
         <component id="com.nokia.sdt.series60.MenuItem">
@@ -144,6 +144,7 @@
             <property id="width">320</property>
             <property id="height">42</property>
           </compoundProperty>
+          <eventBinding id="selected" handlerDisplay="HandleShow_HelloMenuItemSelectedL" handlerSymbol="cpp@src//XXXXContainerView.cpp/function(CXXXXContainerView::HandleShow_HelloMenuItemSelectedL(TInt))"/>
         </component>
         <component id="com.nokia.sdt.series60.MenuItem">
           <compoundProperty id="location">

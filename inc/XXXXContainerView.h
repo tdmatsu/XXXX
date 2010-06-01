@@ -69,6 +69,7 @@ protected:
 	
 	
 	// [[[ begin [User Handlers]
+	TBool HandleShow_HelloMenuItemSelectedL( TInt aCommand );
 	// ]]] end [User Handlers]
 	
 	// ]]] end [Protected Section]

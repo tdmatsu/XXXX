@@ -79,6 +79,11 @@ RESOURCE MENU_PANE r_xxxxcontainer_menu_pane1_menu_pane
 			{
 			command = EXXXXContainerViewShow_HelloMenuItemCommand;
 			txt = STR_XXXXContainerView_7;
+			},
+		MENU_ITEM
+			{
+			command = EXXXXContainerViewShow_HeiMenuItemCommand;
+			txt = STR_XXXXContainerView_10;
 			}
 		};
 	}

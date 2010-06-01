@@ -8,5 +8,6 @@
 */
 enum TXXXXContainerViewCommands
 	{
-	EXXXXContainerViewShow_HelloMenuItemCommand = 0x6000
+	EXXXXContainerViewShow_HelloMenuItemCommand = 0x6000,
+	EXXXXContainerViewShow_HeiMenuItemCommand
 	};

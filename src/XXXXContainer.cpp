@@ -29,6 +29,7 @@ CXXXXContainer::CXXXXContainer()
 	{
 	// [[[ begin generated region: do not modify [Generated Contents]
 	iBtnHello = NULL;
+	iBtnMoi = NULL;
 	// ]]] end generated region [Generated Contents]
 	
 	}
@@ -40,6 +41,8 @@ CXXXXContainer::~CXXXXContainer()
 	// [[[ begin generated region: do not modify [Generated Contents]
 	delete iBtnHello;
 	iBtnHello = NULL;
+	delete iBtnMoi;
+	iBtnMoi = NULL;
 	// ]]] end generated region [Generated Contents]
 	
 	}
@@ -137,6 +140,8 @@ CCoeControl* CXXXXContainer::ComponentControl( TInt aIndex ) const
 		{
 		case EBtnHello:
 			return iBtnHello;
+		case EBtnMoi:
+			return iBtnMoi;
 		}
 	// ]]] end generated region [Generated Contents]
 	
@@ -207,6 +212,23 @@ void CXXXXContainer::InitializeControlsL()
 								TSize ( 250, 74 ) )  
 								 ) ; 
 	iBtnHello->SetObserver( ( MCoeControlObserver* ) iCommandObserver ); 
+	
+	
+	
+	
+	
+	
+	
+	iBtnMoi = static_cast< CAknButton* >
+					( EikControlFactory::CreateByTypeL( EAknCtButton ).iControl );
+	iBtnMoi->ConstructFromResourceL ( R_XXXXCONTAINER_BTN_MOI );
+	
+	iBtnMoi->SetContainerWindowL ( *this );
+	iBtnMoi->SetRect ( TRect ( 
+								TPoint ( 57, 160 ) , 
+								TSize ( 249, 88 ) )  
+								 ) ; 
+	iBtnMoi->SetObserver( ( MCoeControlObserver* ) iCommandObserver ); 
 	
 	
 	

@@ -81,6 +81,7 @@ public:
 	// [[[ begin generated region: do not modify [Generated Instance Variables]
 private: 
 	CAknButton* iBtnHello;
+	CAknButton* iBtnMoi;
 	// ]]] end generated region [Generated Instance Variables]
 	
 	
@@ -98,6 +99,7 @@ public:
 		{
 		// [[[ begin generated region: do not modify [Generated Contents]
 		EBtnHello,
+		EBtnMoi,
 		
 		// ]]] end generated region [Generated Contents]
 		

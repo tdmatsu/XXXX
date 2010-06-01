@@ -13,3 +13,5 @@
 #define STR_XXXXContainerView_2 ""
 #define STR_XXXXContainerView_5 "Hello"
 #define STR_XXXXContainerView_6 "Button Hover Text"
+#define STR_XXXXContainerView_9 "Button Hover Text"
+#define STR_XXXXContainerView_8 "Moi"

@@ -96,6 +96,20 @@
           <property id="height">74</property>
         </compoundProperty>
       </component>
+      <component id="com.nokia.sdt.series60.CAknButton">
+        <compoundProperty id="location">
+          <property id="x">57</property>
+          <property id="y">160</property>
+        </compoundProperty>
+        <property id="buttonHelpText" type="i18n">STR_XXXXContainerView_9</property>
+        <property id="name">btnMoi</property>
+        <property id="buttonText" type="i18n">STR_XXXXContainerView_8</property>
+        <compoundProperty id="images"/>
+        <compoundProperty id="size">
+          <property id="width">249</property>
+          <property id="height">88</property>
+        </compoundProperty>
+      </component>
     </component>
     <component id="com.nokia.sdt.series60.MenuBar">
       <compoundProperty id="location">
@@ -114,12 +128,15 @@
       <string id="STR_XXXXContainerView_4">XXXXContainer</string>
       <string id="STR_XXXXContainerView_5">Hello</string>
       <string id="STR_XXXXContainerView_6">Button Hover Text</string>
+      <string id="STR_XXXXContainerView_8">Moi</string>
+      <string id="STR_XXXXContainerView_9">Button Hover Text</string>
     </stringTable>
   </stringBundle>
   <macroTable/>
   <sourceMappingState>
     <resourceMappings>
       <resourceMapping instanceName="statusPane">r_xxxxcontainer_status_pane</resourceMapping>
+      <resourceMapping instanceName="btnMoi">r_xxxxcontainer_btn_moi</resourceMapping>
       <resourceMapping instanceName="XXXXContainerView">r_xxxxcontainer_xxxxcontainer_view</resourceMapping>
       <resourceMapping instanceName="title">r_xxxxcontainer_title_resource</resourceMapping>
       <resourceMapping instanceName="btnHello">r_xxxxcontainer_btn_hello</resourceMapping>

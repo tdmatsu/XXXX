@@ -41,6 +41,21 @@ RESOURCE AVKON_BUTTON r_xxxxcontainer_btn_hello
 			{
 			txt = STR_XXXXContainerView_5;
 			helptxt = STR_XXXXContainerView_6;
+			dim_bmpmask = -1;
+			press_bmpmask = -1;
+			hover_bmpmask = -1;
+			bmpmask = -1;
+			}
+		};
+	}
+RESOURCE AVKON_BUTTON r_xxxxcontainer_btn_moi
+	{
+	states =
+		{
+		AVKON_BUTTON_STATE
+			{
+			txt = STR_XXXXContainerView_8;
+			helptxt = STR_XXXXContainerView_9;
 			bmpmask = -1;
 			dim_bmpmask = -1;
 			press_bmpmask = -1;

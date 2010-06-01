@@ -99,6 +99,9 @@ protected:
 	void HandleBtnMoiStateChangedL( 
 			CCoeControl* aControl, 
 			TCoeEvent anEvent );
+	void HandleBtnHelloStateChangedL( 
+			CCoeControl* aControl, 
+			TCoeEvent anEvent );
 	// ]]] end [User Handlers]
 	
 public: 

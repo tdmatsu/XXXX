@@ -95,6 +95,7 @@
           <property id="width">250</property>
           <property id="height">74</property>
         </compoundProperty>
+        <eventBinding id="stateChanged" handlerDisplay="HandleBtnHelloStateChangedL" handlerSymbol="cpp@src//XXXXContainer.cpp/function(CXXXXContainer::HandleBtnHelloStateChangedL(CCoeControl*,TCoeEvent))"/>
       </component>
       <component id="com.nokia.sdt.series60.CAknButton">
         <compoundProperty id="location">
@@ -138,8 +139,8 @@
     <resourceMappings>
       <resourceMapping instanceName="statusPane">r_xxxxcontainer_status_pane</resourceMapping>
       <resourceMapping instanceName="btnMoi">r_xxxxcontainer_btn_moi</resourceMapping>
-      <resourceMapping instanceName="title">r_xxxxcontainer_title_resource</resourceMapping>
       <resourceMapping instanceName="XXXXContainerView">r_xxxxcontainer_xxxxcontainer_view</resourceMapping>
+      <resourceMapping instanceName="title">r_xxxxcontainer_title_resource</resourceMapping>
       <resourceMapping instanceName="btnHello">r_xxxxcontainer_btn_hello</resourceMapping>
       <resourceMapping instanceName="optionsMenu">r_xxxxcontainer_options_menu</resourceMapping>
     </resourceMappings>

@@ -41,9 +41,9 @@ CXXXXContainer::~CXXXXContainer()
 	// [[[ begin generated region: do not modify [Generated Contents]
 	delete iBtnHello;
 	iBtnHello = NULL;
+	iControlEventDispatch.Close();		
 	delete iBtnMoi;
 	iBtnMoi = NULL;
-	iControlEventDispatch.Close();		
 	// ]]] end generated region [Generated Contents]
 	
 	}
@@ -219,6 +219,11 @@ void CXXXXContainer::InitializeControlsL()
 	
 	
 	
+	iBtnHello->SetObserver( this );
+	AddControlEventHandlerL( 
+			iBtnHello, 
+			EEventStateChanged, 
+			&CXXXXContainer::HandleBtnHelloStateChangedL );
 	
 	iBtnMoi = static_cast< CAknButton* >
 					( EikControlFactory::CreateByTypeL( EAknCtButton ).iControl );
@@ -307,6 +312,16 @@ void CXXXXContainer::AddControlEventHandlerL(
  * Handle the EEventStateChanged event.
  */
 void CXXXXContainer::HandleBtnMoiStateChangedL( 
+		CCoeControl* /* aControl */, 
+		TCoeEvent /* anEvent */ )
+	{
+	// TODO: implement stateChanged event handler
+	}
+				
+/** 
+ * Handle the EEventStateChanged event.
+ */
+void CXXXXContainer::HandleBtnHelloStateChangedL( 
 		CCoeControl* /* aControl */, 
 		TCoeEvent /* anEvent */ )
 	{

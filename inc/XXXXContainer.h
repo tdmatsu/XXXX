@@ -13,6 +13,7 @@
 #include <coecntrl.h>		
 #include <aknbutton.h>
 #include <stringloader.h>
+#include <coecobs.h>
 // ]]] end generated region [Generated Includes]
 
 
@@ -30,7 +31,7 @@ class CAknButton;
  * @class	CXXXXContainer XXXXContainer.h
  */
 class CXXXXContainer : public CCoeControl
-	{
+	,MCoeControlObserver	{
 public:
 	// constructors and destructor
 	CXXXXContainer();
@@ -87,11 +88,17 @@ private:
 	
 	// [[[ begin [Overridden Methods]
 protected: 
+	void HandleControlEventL( 
+			CCoeControl* aControl, 
+			TCoeEvent anEventType );
 	// ]]] end [Overridden Methods]
 	
 	
 	// [[[ begin [User Handlers]
 protected: 
+	void HandleBtnMoiStateChangedL( 
+			CCoeControl* aControl, 
+			TCoeEvent anEvent );
 	// ]]] end [User Handlers]
 	
 public: 
@@ -107,6 +114,28 @@ public:
 		
 		ELastControl
 		};
+	
+	// [[[ begin [MCoeControlObserver support]
+private: 
+	typedef void ( CXXXXContainer::*ControlEventHandler )( 
+			CCoeControl* aControl, TCoeEvent anEvent );
+	
+	void AddControlEventHandlerL( 
+			CCoeControl* aControl, 
+			TCoeEvent anEvent, 
+			ControlEventHandler aHandler );
+	
+	class TControlEventDispatch 
+		{
+	public: 
+		CCoeControl* src; 
+		TCoeEvent event; 
+		ControlEventHandler handler;
+		};
+		
+	RArray< TControlEventDispatch > iControlEventDispatch;
+	// ]]] end [MCoeControlObserver support]
+	
 	};
 				
 #endif // XXXXCONTAINER_H

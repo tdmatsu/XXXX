@@ -43,6 +43,7 @@ CXXXXContainer::~CXXXXContainer()
 	iBtnHello = NULL;
 	delete iBtnMoi;
 	iBtnMoi = NULL;
+	iControlEventDispatch.Close();		
 	// ]]] end generated region [Generated Contents]
 	
 	}
@@ -235,6 +236,11 @@ void CXXXXContainer::InitializeControlsL()
 	
 	
 	
+	iBtnMoi->SetObserver( this );
+	AddControlEventHandlerL( 
+			iBtnMoi, 
+			EEventStateChanged, 
+			&CXXXXContainer::HandleBtnMoiStateChangedL );
 	
 	}
 // ]]] end generated function
@@ -262,5 +268,48 @@ void CXXXXContainer::Draw( const TRect& aRect ) const
 	
 	// ]]] end generated region [Generated Contents]
 	
+	}
+				
+/** 
+ * Override of the HandleControlEventL virtual function
+ */
+void CXXXXContainer::HandleControlEventL( 
+		CCoeControl* aControl, 
+		TCoeEvent anEventType )
+	{
+	for (int i = 0; i < iControlEventDispatch.Count(); i++)
+		{
+		const TControlEventDispatch& currEntry = iControlEventDispatch[i];
+		if ( currEntry.src == aControl && currEntry.event == anEventType )
+			{
+			( this->*currEntry.handler )( aControl, anEventType );
+			break;
+			}
+		}
+	}
+/** 
+ * Helper function to register MCoeControlObserver event handlers
+ */
+void CXXXXContainer::AddControlEventHandlerL( 
+		CCoeControl* aControl, 
+		TCoeEvent anEvent, 
+		ControlEventHandler aHandler )
+	{
+	TControlEventDispatch entry;
+	entry.src = aControl;
+	entry.event = anEvent;
+	entry.handler = aHandler;
+	TInt err = iControlEventDispatch.Append( entry );
+	User::LeaveIfError( err );
+	}
+			
+/** 
+ * Handle the EEventStateChanged event.
+ */
+void CXXXXContainer::HandleBtnMoiStateChangedL( 
+		CCoeControl* /* aControl */, 
+		TCoeEvent /* anEvent */ )
+	{
+	// TODO: implement stateChanged event handler
 	}
 				

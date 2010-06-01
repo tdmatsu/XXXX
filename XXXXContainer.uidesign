@@ -12,12 +12,14 @@
     <manifestEntry id="com.nokia.sdt.series60.CBABase" version="1.0.0"/>
     <manifestEntry id="com.nokia.sdt.series60.CCoeControl" version="1.2.0"/>
     <manifestEntry id="com.nokia.sdt.series60.ContainerBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknButton" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CCoeControlBase" version="1.0.0"/>
     <manifestEntry id="com.nokia.sdt.series60.MenuBar" version="1.0.0"/>
     <manifestEntry id="com.nokia.sdt.series60.MenuBase" version="1.0.0"/>
   </componentManifest>
+  <property id="com.nokia.sdt.symbian.dm.RESOURCE_DIRECTORY_ID">data</property>
   <property id="com.nokia.sdt.component.symbian.version">5.0.0</property>
   <property id="com.nokia.sdt.component.symbian.vendor">com.nokia.series60</property>
-  <property id="com.nokia.sdt.symbian.dm.RESOURCE_DIRECTORY_ID">data</property>
   <property id="com.nokia.sdt.symbian.dm.COMPONENT_PROVIDER">com.nokia.sdt.component.symbian.Symbian-Provider</property>
   <property id="com.nokia.sdt.symbian.dm.INCLUDE_DIRECTORY_ID">inc</property>
   <property id="com.nokia.sdt.symbian.dm.SOURCE_DIRECTORY_ID">src</property>
@@ -80,6 +82,20 @@
         <property id="width">360</property>
         <property id="height">485</property>
       </compoundProperty>
+      <component id="com.nokia.sdt.series60.CAknButton">
+        <compoundProperty id="location">
+          <property id="x">56</property>
+          <property id="y">35</property>
+        </compoundProperty>
+        <property id="buttonHelpText" type="i18n">STR_XXXXContainerView_6</property>
+        <property id="name">btnHello</property>
+        <property id="buttonText" type="i18n">STR_XXXXContainerView_5</property>
+        <compoundProperty id="images"/>
+        <compoundProperty id="size">
+          <property id="width">250</property>
+          <property id="height">74</property>
+        </compoundProperty>
+      </component>
     </component>
     <component id="com.nokia.sdt.series60.MenuBar">
       <compoundProperty id="location">
@@ -96,14 +112,17 @@
       <string id="STR_XXXXContainerView_2"/>
       <string id="STR_XXXXContainerView_3"/>
       <string id="STR_XXXXContainerView_4">XXXXContainer</string>
+      <string id="STR_XXXXContainerView_5">Hello</string>
+      <string id="STR_XXXXContainerView_6">Button Hover Text</string>
     </stringTable>
   </stringBundle>
   <macroTable/>
   <sourceMappingState>
     <resourceMappings>
       <resourceMapping instanceName="statusPane">r_xxxxcontainer_status_pane</resourceMapping>
-      <resourceMapping instanceName="title">r_xxxxcontainer_title_resource</resourceMapping>
       <resourceMapping instanceName="XXXXContainerView">r_xxxxcontainer_xxxxcontainer_view</resourceMapping>
+      <resourceMapping instanceName="title">r_xxxxcontainer_title_resource</resourceMapping>
+      <resourceMapping instanceName="btnHello">r_xxxxcontainer_btn_hello</resourceMapping>
       <resourceMapping instanceName="optionsMenu">r_xxxxcontainer_options_menu</resourceMapping>
     </resourceMappings>
     <enumMappings>
@@ -120,7 +139,10 @@
     <file>inc/xxxxcontainer.h</file>
     <file>data/xxxx.rss</file>
     <file>data/xxxxcontainer.rssi</file>
-    <file>data/xxxxcontainer.l01</file>
+    <file>inc/xxxx.hrh</file>
+    <file>data/xxxx.loc</file>
+    <file>data/xxxx.l01</file>
     <file>data/xxxxcontainer.loc</file>
+    <file>data/xxxxcontainer.l01</file>
   </generatedFiles>
 </designerData>

@@ -11,6 +11,8 @@
 
 // [[[ begin generated region: do not modify [Generated Includes]
 #include <coecntrl.h>		
+#include <aknbutton.h>
+#include <stringloader.h>
 // ]]] end generated region [Generated Includes]
 
 
@@ -19,6 +21,7 @@
 
 // [[[ begin generated region: do not modify [Generated Forward Declarations]
 class MEikCommandObserver;		
+class CAknButton;
 // ]]] end generated region [Generated Forward Declarations]
 
 /**
@@ -77,6 +80,7 @@ public:
 	
 	// [[[ begin generated region: do not modify [Generated Instance Variables]
 private: 
+	CAknButton* iBtnHello;
 	// ]]] end generated region [Generated Instance Variables]
 	
 	
@@ -93,6 +97,7 @@ public:
 	enum TControls
 		{
 		// [[[ begin generated region: do not modify [Generated Contents]
+		EBtnHello,
 		
 		// ]]] end generated region [Generated Contents]
 		

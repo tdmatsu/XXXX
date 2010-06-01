@@ -6,6 +6,7 @@
  Description : 
 ========================================================================
 */
+#include "XXXXContainer.hrh"
 #include "XXXXContainer.loc"
 
 RESOURCE AVKON_VIEW r_xxxxcontainer_xxxxcontainer_view
@@ -15,7 +16,14 @@ RESOURCE AVKON_VIEW r_xxxxcontainer_xxxxcontainer_view
 	toolbar = 0;
 	}
 RESOURCE MENU_BAR r_xxxxcontainer_options_menu
-	{
+	{titles =
+			{
+			MENU_TITLE
+				{
+				menu_pane = r_xxxxcontainer_menu_pane1_menu_pane;
+				}
+			};
+
 	}
 RESOURCE STATUS_PANE_APP_MODEL r_xxxxcontainer_status_pane
 	{
@@ -60,6 +68,17 @@ RESOURCE AVKON_BUTTON r_xxxxcontainer_btn_moi
 			press_bmpmask = -1;
 			hover_bmpmask = -1;
 			bmpmask = -1;
+			}
+		};
+	}
+RESOURCE MENU_PANE r_xxxxcontainer_menu_pane1_menu_pane
+	{
+	items =
+		{
+		MENU_ITEM
+			{
+			command = EXXXXContainerViewShow_HelloMenuItemCommand;
+			txt = STR_XXXXContainerView_7;
 			}
 		};
 	}

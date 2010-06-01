@@ -1,0 +1,12 @@
+/*
+========================================================================
+ Name        : XXXXContainer.hrh
+ Author      : 
+ Copyright   : Your copyright notice
+ Description : 
+========================================================================
+*/
+enum TXXXXContainerViewCommands
+	{
+	EXXXXContainerViewShow_HelloMenuItemCommand = 0x6000
+	};

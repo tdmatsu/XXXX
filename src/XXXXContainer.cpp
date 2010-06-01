@@ -16,6 +16,7 @@
 #include "XXXXContainer.h"
 #include "XXXXContainerView.h"
 #include "XXXX.hrh"
+#include "XXXXContainer.hrh"
 // ]]] end generated region [Generated User Includes]
 
 #include <AknGlobalNote.h> 

@@ -22,6 +22,7 @@
 
 #include "XXXX.hrh"
 #include "XXXXContainerView.h"
+#include "XXXXContainer.hrh"
 #include "XXXXContainer.h"
 // ]]] end generated region [Generated User Includes]
 
